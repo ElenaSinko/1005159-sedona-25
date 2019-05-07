@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/25/user/1005159).
-* Наставник: Дмитрий Железцов.
+* Студент: [Елена Синько](https://up.htmlacademy.ru/htmlcss/25/user/1005159).
+* Наставник: [Дмитрий Железцов] (https://htmlacademy.ru/profile/sench).
 
 ---
 

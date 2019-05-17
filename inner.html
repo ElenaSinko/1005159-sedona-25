@@ -26,7 +26,28 @@
       <h1>HOTELS</h1>
       <section class = "filters">
             <h2 class = "visually-hidden">Фильтры товаров</h2>
-            <!--фильтры будут добавлены позднее-->
+            <form class = "filter" action = "https://echo.htmlacademy.ru" method = "get">
+              <fieldset>
+                <legend>ИНФРАСТРУКТУРА:</legend>
+                <ul>
+                  <li><label><input class = "filter-option" name = "swimmingpool" type = "checkbox" checked>БАССЕЙН</label></li>
+                  <li><label><input class = "filter-option" name = "parking" type = "checkbox">ПАРКОВКА</label></li>
+                  <li><label><input class = "filter-option" name = "WI-FI" type = "checkbox">WI-FI</label>></li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>ТИП ЖИЛЬЯ:</legend>
+                  <li><label><input class = "filter-option" name = "hotel" type = "checkbox" checked>ГОСТИНИЦА</label>></li>
+                  <li><label><input class = "filter-option" name = "motel" type = "checkbox" checked>МОТЕЛЬ</label></li>
+                  <li><label><input class = "filter-option" name = "apartment" type = "checkbox" checked>АПАРТАМЕНТЫ</label></li>
+
+              </fieldset>
+              <fieldset>
+                <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
+                <!--здесь будет добавлен бегунок-->
+              </fieldset>
+              <button class = "button button-filter" type = "submit">ПОКАЗАТЬ</button>
+            </form>
       </section>
       <section class = "hotels-list">
         <h2>selected hotels</h2>
@@ -40,8 +61,9 @@
                 <td>От 4000 Р.</td>
               </tr>
             </table>
-            <a class = "button" href = "Amaradetails.html">ПОДРОБНЕЕ</a>
-            <a class = "button" href = "booking.html">ЗАБРОНИРОВАТЬ</a>
+            <p class = "rating">Рейтинг: 8,5</p>
+            <a class = "button button-blue" href = "Amaradetails.html">ПОДРОБНЕЕ</a>
+            <a class = "button button-brown" href = "booking.html">ЗАБРОНИРОВАТЬ</a>
           </li>
           <li class = "hotel-item">
             <h3>Desert Quail Inn</h3>
@@ -52,8 +74,9 @@
                 <td>От 3000 Р.</td>
               </tr>
             </table>
-            <a class = "button" href = "Desertdetails.html">ПОДРОБНЕЕ</a>
-            <a class = "button" href = "booking.html">ЗАБРОНИРОВАТЬ</a>
+            <p class = "rating">Рейтинг: 8,9</p>
+            <a class = "button button-blue" href = "Desertdetails.html">ПОДРОБНЕЕ</a>
+            <a class = "button button-brown" href = "booking.html">ЗАБРОНИРОВАТЬ</a>
           </li>
           <li class = "hotel-item">
             <h3>Villas at Poco Diablo</h3>
@@ -64,8 +87,9 @@
                   <td>От 2000 Р.</td>
                 </tr>
             </table>
-            <a class = "button" href = "Villasdetails.html">ПОДРОБНЕЕ</a>
-            <a class = "button" href = "booking.html">ЗАБРОНИРОВАТЬ</a>
+            <p class = "rating">Рейтинг: 9,2</p>
+            <a class = "button button-blue" href = "Villasdetails.html">ПОДРОБНЕЕ</a>
+            <a class = "button button-brown" href = "booking.html">ЗАБРОНИРОВАТЬ</a>
           </li>
         </ul>
        </section>
@@ -82,7 +106,7 @@
       </div>
       <p class = "footer-copyright">
         <div class = "developer">Website by</div>
-        <a href = "htmlacademy.html"><img src="img/logo-htmlacademy.svg" width = "115" height = "45" alt = "Логотип htmlacademy"></a>
+        <a href = "https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width = "115" height = "45" alt = "Логотип htmlacademy"></a>
       </p>
 
     </footer>

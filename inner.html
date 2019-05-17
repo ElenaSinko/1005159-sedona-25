@@ -13,7 +13,7 @@
         </a>
         <ul class="site-navigation-left">
           <li><a class = "site-navigation-link" href = "info.html">Информация</a></li>
-          <li><a class = "site-navigation-link"href = "photos.html">Фото и Видео</a></li>
+          <li><a class = "site-navigation-link" href = "photos.html">Фото и Видео</a></li>
         </ul>
         <ul class = "site-navigation-right">
           <li><a class = "site-navigation-link" href = "map.html">Карта штата</a></li>
@@ -30,20 +30,21 @@
               <fieldset>
                 <legend>ИНФРАСТРУКТУРА:</legend>
                 <ul>
-                  <li><label><input class = "filter-option" name = "swimmingpool" type = "checkbox" checked>БАССЕЙН</label></li>
-                  <li><label><input class = "filter-option" name = "parking" type = "checkbox">ПАРКОВКА</label></li>
-                  <li><label><input class = "filter-option" name = "WI-FI" type = "checkbox">WI-FI</label>></li>
+                  <li><label class = "accomodation-label"><input class = "filter-option" name = "swimmingpool" type = "checkbox" checked>БАССЕЙН</label></li>
+                  <li><label class = "accomodation-label"><input class = "filter-option" name = "parking" type = "checkbox">ПАРКОВКА</label></li>
+                  <li><label class = "accomodation-label"><input class = "filter-option" name = "WI-FI" type = "checkbox">WI-FI</label>></li>
                 </ul>
               </fieldset>
               <fieldset>
                 <legend>ТИП ЖИЛЬЯ:</legend>
-                  <li><label><input class = "filter-option" name = "hotel" type = "checkbox" checked>ГОСТИНИЦА</label>></li>
-                  <li><label><input class = "filter-option" name = "motel" type = "checkbox" checked>МОТЕЛЬ</label></li>
-                  <li><label><input class = "filter-option" name = "apartment" type = "checkbox" checked>АПАРТАМЕНТЫ</label></li>
-
+                <ul>
+                  <li><label class = "accomodation-label"><input class = "filter-option" name = "hotel" type = "checkbox" checked>ГОСТИНИЦА</label>></li>
+                  <li><label class = "accomodation-label"><input class = "filter-option" name = "motel" type = "checkbox" checked>МОТЕЛЬ</label></li>
+                  <li><label class = "accomodation-label"><input class = "filter-option" name = "apartment" type = "checkbox" checked>АПАРТАМЕНТЫ</label></li>
+                </ul>
               </fieldset>
               <fieldset>
-                <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
+                <legend class = "accomodation-label">СТОИМОСТЬ В СУТКИ (Р):</legend>
                 <!--здесь будет добавлен бегунок-->
               </fieldset>
               <button class = "button button-filter" type = "submit">ПОКАЗАТЬ</button>
@@ -104,10 +105,10 @@
           <li><a class = "social-button social-button-yb">youtube</a></li>
         </ul>
       </div>
-      <p class = "footer-copyright">
+      <div class = "footer-copyright">
         <div class = "developer">Website by</div>
-        <a href = "https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width = "115" height = "45" alt = "Логотип htmlacademy"></a>
-      </p>
+        <a href = "htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width = "115" height = "45" alt = "Логотип htmlacademy"></a>
+      </div>
 
     </footer>
 

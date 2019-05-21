@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel = "stylesheet" href = "css/style.css">
   </head>
   <body>
     <header class = "main-header">
@@ -27,27 +29,30 @@
 
       <section class = "advantages">
         <h2 class = "visually-hidden">Причины посетить Sedona</h2>
-        <p>Седона — небольшой городок в Аризоне,
+        <p class = "title-Sedona">Седона — небольшой городок в Аризоне,
             заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
          <div class = "reason1">
-           <h3>Настоящий городок</h3>
+           <div class = "reason1-information">
+           <h3 class = "title">Настоящий городок</h3>
            <p>— №1 —</p>
            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+           </div>
+           <div class = "reason1-picture"></div>
          </div>
       </section>
       <section class = "accommodation">
         <ul class = "accomodation-list">
           <li class = "accomodation-list-item">
-            <h3>Жилье</h3>
+            <h3 class = "title">Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class = "accomodation-list-item">
-            <h3>Еда</h3>
+            <h3 class = "title">Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class = "accomodation-list-item">
-            <h3>Сувениры</h3>
+            <h3 class = "title">Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
@@ -55,60 +60,66 @@
       <section class = "advantages">
         <h2 class = "visually-hidden">Причины посетить Sedona</h2>
          <div class = "reason2">
-            <h3>Там есть мост дьявола</h3>
+            <div class = "reason2-picture"></div>
+            <div class = "reason2-information">
+            <h3 class = "title">Там есть мост дьявола</h3>
             <p>—едона — не а №2 —</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
          </div>
          <div class = "reason3">
-            <h3>Небольшая площадь</h3>
+            <h3 class = "title">Небольшая площадь</h3>
             <p>— №3 —</p>
             <p>Все достопримечательности находятся очень близко</p>
          </div>
          <div class = "reason4">
-            <h3>Красивая дорога</h3>
+            <h3 class = "title">Красивая дорога</h3>
             <p>— №4 —</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
          </div>
          <div class = "reason5">
-            <h3>Мало туристов</h3>
+            <h3 class = "title">Мало туристов</h3>
             <p>— №5 —</p>
             <p>Большинство едет в гранд каньон и толпится там</p>
          </div>
       </section>
       <section class = "reservation">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <h3>ПОИСК ГОСТИНИЦЫ В CЕДОНЕ</h3>
-        <form class = "reservation-form" action = "https://echo.htmlacademy.ru" method = "post">
-          <label class = "reservation-label">ДАТА ЗАЕЗДА:
-            <input type = "text" name = "arrival-date" placeholder = "24 АПРЕЛЯ 2017">
-          </label>
-          <label class = "reservation-label">ДАТА ВЫЕЗДА:
-            <input type = "text" name = "departure-date" placeholder = "4 ИЮЛЯ 2017">
-          </label>
-          <label class = "reservation-label">ВЗРОСЛЫЕ:
-            <input type = "number" name = "adults" min = 1 placeholder = "2" >
-          </label>
-          <label class = "reservation-label">ДЕТИ:
-            <input type = "number" name = "kids" min = 0 placeholder = "0" >
-          </label>
-          <button class = " button button-blue" type = "submit">НАЙТИ</button>
-        </form>
-
-        <a class = "button" href="find.html">найти</a>
+        <h2 class = "title title-reservation">Заинтересовались?</h2>
+        <p class = "text-reservtion">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a class = "title title-hotel" href = "hotels.html">ПОИСК ГОСТИНИЦЫ В CЕДОНЕ</a>
+        <div class = "map-area">
+          <div class = "form-area">
+          <form class = "reservation-form" action = "https://echo.htmlacademy.ru" method = "post">
+            <label class = "reservation-label text">ДАТА ЗАЕЗДА:
+              <input type = "text" name = "arrival-date" placeholder = "24 АПРЕЛЯ 2017">
+            </label>
+            <label class = "reservation-label text">ДАТА ВЫЕЗДА:
+              <input type = "text" name = "departure-date" placeholder = "4 ИЮЛЯ 2017">
+            </label>
+            <label class = "reservation-label text">ВЗРОСЛЫЕ:
+              <input type = "number" name = "adults" min = 1 placeholder = "2" >
+            </label>
+            <label class = "reservation-label text">ДЕТИ:
+              <input type = "number" name = "kids" min = 0 placeholder = "0" >
+            </label>
+            <button class = " button-main button-main-blue text" type = "submit">НАЙТИ</button>
+          </form>
+          </div>
+        </div>
       </section>
     </main>
+
     <footer class = "main-footer">
-      <a href = "visitSEDONA.html">#visitSEDONA</a>
+      <a class = "title-Sedona" href = "visitSEDONA.html">#visitSEDONA</a>
       <div class = "footer-social">
         <ul class = "social">
-          <li><a class = "social-button social-button-tw">twitter</a></li>
-          <li><a class = "social-button social-button-fb">facebook</a></li>
-          <li><a class = "social-button social-button-yb">youtube</a></li>
+          <li><a class = "social-button social-button-tw" href = "#">twitter</a></li>
+          <li><a class = "social-button social-button-fb" href = "#">facebook</a></li>
+          <li><a class = "social-button social-button-yb" href = "#">youtube</a></li>
         </ul>
       </div>
       <div class = "footer-copyright">
-          <div class = "developer">Website by</div>
+          <div class = "text">Website by</div>
           <a href = "https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width = "115" height = "45" alt = "Логотип htmlacademy"></a>
       </div>
 

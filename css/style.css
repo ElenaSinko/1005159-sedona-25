@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header a,
+.main-footer a,
+.reservation a {
+  color: #000000;
+}
+
+.main-navigation {
+  line-height: 26px;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #81b3d2;
+}
+
+.main-navigation a:active,
+.main-navigation a:active {
+  color: #cacaca;
+}
+
+.site-navigation-left,
+.site-navigation-right,
+.social {
+  list-style: none;
+}
+
+.welcome {
+  /*width:1120px;*/
+  width: 1200px;
+  height:510px;
+  background-image: url("../img/index_background-welcome.jpg");
+  background-position: 50% 0;
+  /*background-size: 1200px 510px;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color:black;
+}
+
+.title-Sedona {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color:black;
+}
+
+.title-reservation {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.text-reservation {
+  line-height: 24px;
+}
+.title.title-hotel {
+  color: white;
+  background-color:#766357;
+}
+
+.title.title-hotel:hover,
+.title.title-hotel:focus {
+  background-color: #604e43;
+}
+
+.title.title-hotel:active {
+  color: #928a85;
+  background-color: #503e33;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 26px;
+  color:black;
+}
+
+.advantages p,
+.advantages h3 {
+text-align: center;
+}
+
+.accomodation-list {
+  list-style:none;
+}
+
+.accomodation-list li {
+  text-align: center;
+}
+
+.reservation h2,
+.reservation h3,
+.reservation p {
+  text-align: center;
+}
+.button {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  color: white;
+
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.button-filter {
+  font-weight: normal;
+  background-color:transparent;
+  border: 2px solid #f2f2f2;
+}
+
+.button-filter:hover {
+  color:black;
+  background-color: #ffffff;
+}
+
+.button-blue{
+  background-color: #81b3d2;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+  background-color: #669ec0;
+}
+
+.button-blue:active {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+.button-brown {
+  background-color: #766357;
+}
+
+.button-brown:hover,
+.button-brown:focus {
+  background-color: #604e43;
+}
+
+.button-brown:active {
+  color: #877d78;
+  background-color: #503e33;
+}
+
+.button-main {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: white;
+}
+
+.button-main-blue {
+  background-color:#81b3d2;
+}
+
+.button-main-blue:hover,
+.button-main-blue:focus {
+  outline: none;
+  background-color: #669ec0 ;
+}
+
+.button-main-blue:active {
+  outline: none;
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+.reason1,
+.reason2 {
+  color: white;
+  background-color: #81b3d2;
+}
+
+.reason1 h3,
+.reason1 p,
+.reason2 h3,
+.reason2 p {
+  color:white;
+}
+
+.reason3,
+.reason4,
+.reason5 {
+  background-color: #eeeeee;
+}
+
+.advantages .reason1-picture {
+  width: 800px;
+  height: 258px;
+  background-image: url("../img/index_background-reason1.jpg");
+  background-size: contain;
+}
+
+.advantages .reason2-picture {
+  width: 800px;
+  height: 258px;
+  background-image: url("../img/index_background-reason2.jpg");
+  background-size: contain;
+}
+
+
+.map-area {
+  width: 1120px;
+  height: 470px;
+  background-image: url("../img/index _backgroung-map.jpg");
+  background-size: contain;
+}
+
+.form-area {
+  width: 570px;
+  height: 395px;
+  background-color: white;
+}
+.reservation-form {
+  background-color:white;
+
+}
+
+.reservation-form input {
+  background-color: #f2f2f2;
+}
+
+.reservation-form input:hover
+{
+  background-color:#ebebeb;
+}
+.reservation-form input:focus {
+  outline: none;
+  background-color: white;
+  border: 2px solid #e5e5e5;
+}
+
+.filters {
+  background-image: url("../img/inner_background.jpg");
+}
+
+.items-list {
+  list-style: none;
+}
+
+.conditions-list {
+  list-style: none;
+}
+
+.title-hotels:hover,
+.title-hotels:focus {
+  color: #81b3d2;
+}
+
+.title-hotels:active {
+  color: #cacaca;
+}
+
+.hotel-price td {
+  font-weight: normal;
+}
+
+.rating {
+  color: #666666;
+  font-weight: normal;
+  background-color: #f2f2f2;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+}

@@ -3,6 +3,8 @@
   <head>
       <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
+      <link href = "https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+      <link rel = "stylesheet" href = "css/style.css">
   </head>
   <body>
 
@@ -29,22 +31,22 @@
             <form class = "filter" action = "https://echo.htmlacademy.ru" method = "get">
               <fieldset>
                 <legend>ИНФРАСТРУКТУРА:</legend>
-                <ul>
-                  <li><label class = "accomodation-label"><input class = "filter-option" name = "swimmingpool" type = "checkbox" checked>БАССЕЙН</label></li>
-                  <li><label class = "accomodation-label"><input class = "filter-option" name = "parking" type = "checkbox">ПАРКОВКА</label></li>
-                  <li><label class = "accomodation-label"><input class = "filter-option" name = "WI-FI" type = "checkbox">WI-FI</label>></li>
+                <ul class = "conditions-list">
+                  <li><label class = "conditions-label"><input class = "filter-option" name = "swimmingpool" type = "checkbox" checked>БАССЕЙН</label></li>
+                  <li><label class = "conditions-label"><input class = "filter-option" name = "parking" type = "checkbox">ПАРКОВКА</label></li>
+                  <li><label class = "conditions-label"><input class = "filter-option" name = "WI-FI" type = "checkbox">WI-FI</label>></li>
                 </ul>
               </fieldset>
               <fieldset>
                 <legend>ТИП ЖИЛЬЯ:</legend>
-                <ul>
-                  <li><label class = "accomodation-label"><input class = "filter-option" name = "hotel" type = "checkbox" checked>ГОСТИНИЦА</label>></li>
-                  <li><label class = "accomodation-label"><input class = "filter-option" name = "motel" type = "checkbox" checked>МОТЕЛЬ</label></li>
-                  <li><label class = "accomodation-label"><input class = "filter-option" name = "apartment" type = "checkbox" checked>АПАРТАМЕНТЫ</label></li>
+                <ul class = "conditions-list">
+                  <li><label class = "conditions-label"><input class = "filter-option" name = "hotel" type = "checkbox" checked>ГОСТИНИЦА</label>></li>
+                  <li><label class = "conditions-label"><input class = "filter-option" name = "motel" type = "checkbox" checked>МОТЕЛЬ</label></li>
+                  <li><label class = "conditions-label"><input class = "filter-option" name = "apartment" type = "checkbox" checked>АПАРТАМЕНТЫ</label></li>
                 </ul>
               </fieldset>
               <fieldset>
-                <legend class = "accomodation-label">СТОИМОСТЬ В СУТКИ (Р):</legend>
+                <legend class = "conditions-label">СТОИМОСТЬ В СУТКИ (Р):</legend>
                 <!--здесь будет добавлен бегунок-->
               </fieldset>
               <button class = "button button-filter" type = "submit">ПОКАЗАТЬ</button>
@@ -54,7 +56,7 @@
         <h2>selected hotels</h2>
         <ul class = "items-list">
           <li class = "hotel-item">
-            <h3>Amara Resort & Spa</h3>
+            <h3 class = "title-Sedona title-hotels">Amara Resort & Spa</h3>
             <img src = "img/inner_hotels-amara.jpg" width = "135" height = "90" alt = "Amara Resort & Spa">
             <table class = "hotel-price">
               <tr>
@@ -67,7 +69,7 @@
             <a class = "button button-brown" href = "booking.html">ЗАБРОНИРОВАТЬ</a>
           </li>
           <li class = "hotel-item">
-            <h3>Desert Quail Inn</h3>
+            <h3 class = "title-Sedona title-hotels">Desert Quail Inn</h3>
             <img src = "img/inner_hotels-desert.jpg" width = "135" height = "90" alt = "Desert Quail Inn">
             <table class = "hotel-price">
               <tr>
@@ -80,7 +82,7 @@
             <a class = "button button-brown" href = "booking.html">ЗАБРОНИРОВАТЬ</a>
           </li>
           <li class = "hotel-item">
-            <h3>Villas at Poco Diablo</h3>
+            <h3 class = "title-Sedona title-hotels">Villas at Poco Diablo</h3>
             <img src = "img/inner_hotels-villas.jpg" width = "135" height = "90" alt = "Villas at Poco Diablo">
             <table class = "hotel-price">
                 <tr>
@@ -100,9 +102,9 @@
       <a href = "visitSEDONA.html">#visitSEDONA</a>
       <div class = "footer-social">
         <ul class = "social">
-          <li><a class = "social-button social-button-tw">twitter</a></li>
-          <li><a class = "social-button social-button-fc">facebook</a></li>
-          <li><a class = "social-button social-button-yb">youtube</a></li>
+          <li><a class = "social-button social-button-tw" href = "#">twitter</a></li>
+          <li><a class = "social-button social-button-fc" href = "#">facebook</a></li>
+          <li><a class = "social-button social-button-yb" href = "#">youtube</a></li>
         </ul>
       </div>
       <div class = "footer-copyright">

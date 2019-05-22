@@ -25,7 +25,6 @@ a {
 
 .main-navigation {
   line-height: 26px;
-  font-weight: bold;
   background-color: #ffffff;
 }
 
@@ -48,7 +47,7 @@ a {
 .welcome {
   /*width:1120px;*/
   width: 1200px;
-  height:510px;
+  height:540px;
   background-image: url("../img/index_background-welcome.jpg");
   background-position: 50% 0;
   /*background-size: 1200px 510px;*/
@@ -59,24 +58,33 @@ a {
 .title {
   font-size: 21px;
   line-height: 21px;
-  font-weight: bold;
   color:black;
 }
 
 .title-sedona {
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
   color:black;
+}
+
+.text-sedona {
+  font-weight: normal;
+}
+
+.text-sedona-white {
+  font-weight: normal;
+  color: white;
 }
 
 .title-reservation {
   font-size: 30px;
   line-height: 36px;
+  color: black;
 }
 
 .text-reservation {
   line-height: 24px;
+  font-weight: normal;
 }
 .title.title-hotel {
   color: white;
@@ -264,6 +272,17 @@ text-align: center;
   background-image: url("../img/inner_background.jpg");
 }
 
+.filters legend {
+  font-size: 16px;
+  color:white;
+}
+
+.conditions-label {
+  font-size: 14px;
+  font-weight: normal;
+  color:white;
+}
+
 .items-list {
   list-style: none;
 }
@@ -291,11 +310,18 @@ text-align: center;
   background-color: #f2f2f2;
 }
 
+.html-button:hover path {
+   fill: #81b3d2;
+}
+
+.html-button:active path {
+    fill: #bdbbbc;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
-
 }

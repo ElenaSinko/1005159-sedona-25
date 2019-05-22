@@ -63,7 +63,7 @@ a {
   color:black;
 }
 
-.title-Sedona {
+.title-sedona {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -126,6 +126,10 @@ text-align: center;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
+}
+
+.filters fieldset {
+  border: none;
 }
 
 .button-filter {
@@ -256,6 +260,7 @@ text-align: center;
 }
 
 .filters {
+  background-color: #4377a2;
   background-image: url("../img/inner_background.jpg");
 }
 

@@ -9,13 +9,14 @@ body {
   color: #333333;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .container-shadow {
   width: 1200px;
   margin: 0px auto;
-  box-shadow: 0px 0px 30px 15px rgba(40, 40, 40, 0.2);
+  box-shadow: 0px 0px 15px 0px rgba(0, 1, 1, 0.2);
+  background-color: #ffffff;
 }
 .container-top {
   width: 1200px;
@@ -439,15 +440,15 @@ text-align: center;
 }
 
 .hotel-item:first-child .container-hotel-information {
-  margin-right: 583px;
+  margin-right: 575px;
 }
 
 .hotel-item:nth-child(2) .container-hotel-information {
-  margin-right: 607px;
+  margin-right: 592px;
 }
 
 .hotel-item:last-child .container-hotel-information {
-  margin-right: 568px;
+  margin-right: 560px;
 }
 
 .container-hotel-information {
@@ -456,14 +457,18 @@ text-align: center;
 }
 
 .container-hotel-information h3 {
-  margin-left: 0px;
-
+  margin: 0px;
+  margin-top: 25px;
 }
 
 .hotel-item > p {
+  /*margin-right: 75px;
+  margin-bottom: 20px;*/
+  margin:0px;
   margin-right: 75px;
-  align-self: flex-end;
   margin-bottom: 20px;
+  padding: 3px 12px 3px 15px;
+  align-self: flex-end;
 }
 
 .title-hotels:hover,

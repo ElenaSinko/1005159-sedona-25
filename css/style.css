@@ -13,6 +13,45 @@ body {
   background-color: #ffffff;
 }
 
+.container-shadow {
+  width: 1200px;
+  margin: 0px 150px;
+  box-shadow: 0px 0px 15px 0px rgba(40, 40, 40, 0.2);
+}
+.main-navigation {
+  display: flex;
+  height: 56px;
+}
+
+.site-navigation-left,
+.site-navigation-right {
+  display: flex;
+  width: 430px;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px;
+  margin: 0px;
+}
+
+.site-navigation-left {
+  margin-left: 73px;
+  margin-right: 123px;
+}
+
+.site-navigation-right{
+  margin-right: 132px;
+  margin-left: 73px;
+}
+
+.main-header-logo {
+  order: 1;
+}
+
+.site-navigation-right {
+  order: 2;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -47,14 +86,41 @@ a {
 .welcome {
   /*width:1120px;*/
   width: 1200px;
-  height:540px;
+  height:570px;
   background-image: url("../img/index_background-welcome.jpg");
   background-position: 50% 0;
   /*background-size: 1200px 510px;*/
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 55px;
 }
 
+.reason1 {
+  display: flex;
+  margin-bottom: 55px;
+}
+
+.reason2 {
+  display: flex;
+}
+
+.container-title-reasons {
+  margin: 73px;
+}
+
+.accomodation-list {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.container-reasons-345 {
+  display: flex;
+}
+.advantages {
+  background-color: red;
+}
 .title {
   font-size: 21px;
   line-height: 21px;
@@ -235,7 +301,6 @@ text-align: center;
   background-size: contain;
 }
 
-
 .map-area {
   width: 1120px;
   height: 470px;
@@ -247,6 +312,7 @@ text-align: center;
   width: 570px;
   height: 395px;
   background-color: white;
+  margin: 0 auto;
 }
 .reservation-form {
   background-color:white;

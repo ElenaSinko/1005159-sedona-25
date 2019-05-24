@@ -8,7 +8,7 @@
       <link rel = "stylesheet" href = "css/style.css">
   </head>
   <body>
-
+    <div class = "container-shadow">
     <header class = "main-header">
       <nav class = "main-navigation">
         <a class = "main-header-logo"  href = "index.html">
@@ -26,7 +26,7 @@
     </header>
 
     <main class = "container">
-      <h1>HOTELS</h1>
+      <h1 class = "visually-hidden">HOTELS</h1>
       <section class = "filters">
             <h2 class = "visually-hidden">Фильтры товаров</h2>
             <form class = "filter" action = "https://echo.htmlacademy.ru" method = "get">
@@ -54,46 +54,53 @@
             </form>
       </section>
       <section class = "hotels-list">
-        <h2>selected hotels</h2>
+        <h2 class = "visually-hidden">selected hotels</h2>
+        <div class = "selected-hotels-title">Найдено: 3</div>
         <ul class = "items-list">
           <li class = "hotel-item">
-            <h3 class = "title-sedona title-hotels">Amara Resort & Spa</h3>
             <img src = "img/inner_hotels-amara.jpg" width = "135" height = "90" alt = "Amara Resort & Spa">
-            <table class = "hotel-price">
-              <tr>
-                <td>Гостиница</td>
-                <td>От 4000 Р.</td>
-              </tr>
-            </table>
+            <div class = "container-hotel-information">
+              <h3 class = "title-sedona title-hotels">Amara Resort & Spa</h3>
+              <table class = "hotel-price">
+                <tr>
+                  <td>Гостиница</td>
+                  <td>От 4000 Р.</td>
+                </tr>
+              </table>
+              <a class = "button button-blue" href = "Amaradetails.html">ПОДРОБНЕЕ</a>
+              <a class = "button button-brown" href = "booking.html">ЗАБРОНИРОВАТЬ</a>
+            </div>
             <p class = "rating">Рейтинг: 8,5</p>
-            <a class = "button button-blue" href = "Amaradetails.html">ПОДРОБНЕЕ</a>
-            <a class = "button button-brown" href = "booking.html">ЗАБРОНИРОВАТЬ</a>
           </li>
           <li class = "hotel-item">
-            <h3 class = "title-sedona title-hotels">Desert Quail Inn</h3>
             <img src = "img/inner_hotels-desert.jpg" width = "135" height = "90" alt = "Desert Quail Inn">
-            <table class = "hotel-price">
-              <tr>
-                <td>Мотель</td>
-                <td>От 3000 Р.</td>
-              </tr>
-            </table>
+            <div class = "container-hotel-information">
+              <h3 class = "title-sedona title-hotels">Desert Quail Inn</h3>
+              <table class = "hotel-price">
+                <tr>
+                  <td>Мотель</td>
+                  <td>От 3000 Р.</td>
+                </tr>
+              </table>
+              <a class = "button button-blue" href = "Desertdetails.html">ПОДРОБНЕЕ</a>
+              <a class = "button button-brown" href = "booking.html">ЗАБРОНИРОВАТЬ</a>
+            </div>
             <p class = "rating">Рейтинг: 8,9</p>
-            <a class = "button button-blue" href = "Desertdetails.html">ПОДРОБНЕЕ</a>
-            <a class = "button button-brown" href = "booking.html">ЗАБРОНИРОВАТЬ</a>
           </li>
           <li class = "hotel-item">
-            <h3 class = "title-sedona title-hotels">Villas at Poco Diablo</h3>
             <img src = "img/inner_hotels-villas.jpg" width = "135" height = "90" alt = "Villas at Poco Diablo">
-            <table class = "hotel-price">
+            <div class = "container-hotel-information">
+              <h3 class = "title-sedona title-hotels">Villas at Poco Diablo</h3>
+              <table class = "hotel-price">
                 <tr>
                   <td>Апартаменты</td>
                   <td>От 2000 Р.</td>
                 </tr>
-            </table>
+              </table>
+              <a class = "button button-blue" href = "Villasdetails.html">ПОДРОБНЕЕ</a>
+              <a class = "button button-brown" href = "booking.html">ЗАБРОНИРОВАТЬ</a>
+            </div>
             <p class = "rating">Рейтинг: 9,2</p>
-            <a class = "button button-blue" href = "Villasdetails.html">ПОДРОБНЕЕ</a>
-            <a class = "button button-brown" href = "booking.html">ЗАБРОНИРОВАТЬ</a>
           </li>
         </ul>
        </section>
@@ -115,6 +122,6 @@
       </div>
 
     </footer>
-
+    </div>
   </body>
 </html>

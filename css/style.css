@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  width: 1200px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -15,32 +14,44 @@ body {
 
 .container-shadow {
   width: 1200px;
-  margin: 0px 150px;
-  box-shadow: 0px 0px 15px 0px rgba(40, 40, 40, 0.2);
+  margin: 0px auto;
+  box-shadow: 0px 0px 30px 15px rgba(40, 40, 40, 0.2);
+}
+.container-top {
+  width: 1200px;
+  height:570px;
+  background-image: url("../img/index_background-welcome.jpg");
+  background-position: 50% 0;
+
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .main-navigation {
   display: flex;
   height: 56px;
+
 }
 
 .site-navigation-left,
 .site-navigation-right {
+  align-self: center;
   display: flex;
-  width: 430px;
+  width: 390px;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0px;
   margin: 0px;
 }
 
 .site-navigation-left {
-  margin-left: 73px;
-  margin-right: 123px;
+  margin-left: 70px;
+  margin-right: 120px;
 }
 
+
 .site-navigation-right{
-  margin-right: 132px;
-  margin-left: 73px;
+  margin-right: 70px;
+  margin-left: 120px;
 }
 
 .main-header-logo {
@@ -84,15 +95,7 @@ a {
 }
 
 .welcome {
-  /*width:1120px;*/
-  width: 1200px;
-  height:570px;
-  background-image: url("../img/index_background-welcome.jpg");
-  background-position: 50% 0;
-  /*background-size: 1200px 510px;*/
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 55px;
+ margin-bottom: 55px;
 }
 
 .reason1 {
@@ -105,22 +108,36 @@ a {
 }
 
 .container-title-reasons {
-  margin: 73px;
+  margin: 70px;
 }
 
 .accomodation-list {
   padding: 0px;
   margin: 0px;
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 160px;
 }
 
 .container-reasons-345 {
   display: flex;
+  justify-content: space-around;
+  background-color: #eeeeee;
+  padding-top: 20px;
+  padding-bottom: 75px;
 }
-.advantages {
-  background-color: red;
+.reason3 {
+  width: 270px;
 }
+
+.reason4 {
+  width: 286px;
+}
+
+.reason5 {
+  width: 265px;
+}
+
+
 .title {
   font-size: 21px;
   line-height: 21px;
@@ -281,34 +298,53 @@ text-align: center;
   color:white;
 }
 
-.reason3,
-.reason4,
-.reason5 {
-  background-color: #eeeeee;
-}
-
-.advantages .reason1-picture {
+.reason1-picture {
   width: 800px;
   height: 258px;
   background-image: url("../img/index_background-reason1.jpg");
   background-size: contain;
 }
 
-.advantages .reason2-picture {
+.reason1-information {
+  width: 400px;
+}
+
+.reason2-information {
+  width: 400px;
+}
+
+.reason2-picture {
   width: 800px;
   height: 258px;
   background-image: url("../img/index_background-reason2.jpg");
   background-size: contain;
 }
 
+.title-reservation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.title-hotel {
+  width: 510px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
 .map-area {
-  width: 1120px;
+  width: 1200px;
   height: 470px;
   background-image: url("../img/index _backgroung-map.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .form-area {
+  padding: 0;
+  margin: 0;
   width: 570px;
   height: 395px;
   background-color: white;
@@ -317,6 +353,9 @@ text-align: center;
 .reservation-form {
   background-color:white;
 
+}
+.reservation {
+  margin-bottom: 35px;
 }
 
 .reservation-form input {
@@ -357,6 +396,76 @@ text-align: center;
   list-style: none;
 }
 
+.filters {
+  height: 220px;
+  /* высота задана временно*/
+}
+
+.filter {
+  display: flex;
+  justify-content: space-around;
+}
+
+.selected-hotels-title {
+  height: 83px;
+  /* высота задана временно*/
+}
+
+.items-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 3px;
+}
+.hotel-item {
+  border-top: 1px solid #e5e5e5;
+}
+
+.hotel-item:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.hotel-item img {
+  margin-left: 45px;
+  padding: 25px;
+}
+
+.hotel-item:first-child .container-hotel-information {
+  margin-right: 583px;
+}
+
+.hotel-item:nth-child(2) .container-hotel-information {
+  margin-right: 607px;
+}
+
+.hotel-item:last-child .container-hotel-information {
+  margin-right: 568px;
+}
+
+.container-hotel-information {
+  height: 135px;
+  padding-top: 0px;
+}
+
+.container-hotel-information h3 {
+  margin-left: 0px;
+
+}
+
+.hotel-item > p {
+  margin-right: 75px;
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
 .title-hotels:hover,
 .title-hotels:focus {
   color: #81b3d2;
@@ -374,6 +483,32 @@ text-align: center;
   color: #666666;
   font-weight: normal;
   background-color: #f2f2f2;
+}
+
+.main-footer {
+  display: flex;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  padding-top: 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title-sedona {
+  margin-left: 23px;
+}
+
+.social {
+  display: flex;
+}
+
+.footer-copyright {
+  display: flex;
+}
+
+.developer {
+  margin-right: 5px;
+  padding-top: 13px;
 }
 
 .html-button:hover path {

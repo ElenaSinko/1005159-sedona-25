@@ -27,18 +27,49 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .main-navigation {
   display: flex;
   height: 56px;
+}
 
+.site-navigation-left,
+.site-navigation-right {
+  display: flex;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}
+.site-navigation-left {
+  width: 341px;
+  margin-left: 73px;
+  margin-right: 118px;
+}
+.site-navigation-left li:first-child {
+  margin-right: 147px;
+}
+
+.site-navigation-right {
+  width: 328px;
+  margin-left: 130px;
+  margin-right: 73px;
+}
+
+.site-navigation-right li:first-child {
+  margin-right: 162px;
+}
+
+/*
+.main-navigation {
+  display: flex;
+  height: 56px;
 }
 
 .site-navigation-left,
 .site-navigation-right {
   align-self: center;
   display: flex;
-  width: 390px;
-  flex-direction: row;
+  width: 380px;
   justify-content: space-between;
   padding: 0px;
   margin: 0px;
@@ -53,8 +84,9 @@ body {
 .site-navigation-right{
   margin-right: 70px;
   margin-left: 120px;
+  background-color: red;
 }
-
+*/
 .main-header-logo {
   order: 1;
 }
@@ -62,6 +94,7 @@ body {
 .site-navigation-right {
   order: 2;
 }
+
 
 
 a {
@@ -108,15 +141,30 @@ a {
   display: flex;
 }
 
+.text-sedona-number12 {
+  margin-bottom: 20px;
+}
+
 .container-title-reasons {
-  margin: 70px;
+  margin: 53px 300px 53px 275px;
+}
+.container-title-reasons .text-sedona {
+  padding-top: 10px;
+  margin-left: 20px;
+
 }
 
 .accomodation-list {
   padding: 0px;
   margin: 0px;
   display: flex;
-  margin-bottom: 160px;
+  margin-bottom: 155px;
+}
+
+.accomodation-list-item1::before {
+  content:"";
+  background-image: url("../img/icon-1.svg");
+
 }
 
 .container-reasons-345 {
@@ -124,20 +172,53 @@ a {
   justify-content: space-around;
   background-color: #eeeeee;
   padding-top: 20px;
-  padding-bottom: 75px;
+  padding-bottom: 57px;
 }
+.reason3 p,
+.reason3 h3,
+.reason4 p,
+.reason4 h3,
+.reason5 p,
+.reason5 h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
 .reason3 {
-  width: 270px;
+  width: 220px;
+  margin-top: 24px;
+  margin-left: 15px;
+}
+
+.reason3 h3 {
+  margin-bottom: 21px;
+}
+
+.reason3 .text-sedona-number345,
+.reason4 .text-sedona-number345,
+.reason5 .text-sedona-number345 {
+  margin-bottom: 25px;
 }
 
 .reason4 {
-  width: 286px;
+  width: 275px;
+  margin-top: 24px;
+  margin-left: 15px;
 }
+
+.reason4 h3 {
+  margin-bottom: 21px;
+}
+
 
 .reason5 {
-  width: 265px;
+  width: 252px;
+  margin-top: 24px;
 }
 
+.reason5 h3 {
+  margin-bottom: 21px;
+}
 
 .title {
   font-size: 21px;
@@ -166,6 +247,12 @@ a {
   color: black;
 }
 
+.title-reservation-container p {
+ width: 444px;
+ margin: 0 auto;
+ margin-bottom: 55px;
+}
+
 .text-reservation {
   line-height: 24px;
   font-weight: normal;
@@ -188,6 +275,7 @@ a {
 .text {
   font-size: 14px;
   line-height: 26px;
+  font-weight:  normal;
   color:black;
 }
 
@@ -307,11 +395,38 @@ text-align: center;
 }
 
 .reason1-information {
+  box-sizing: border-box;
   width: 400px;
+  padding: 47px 60px 0px 60px;
+}
+
+
+.reason1-information h3 {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-bottom: 10px;
 }
 
 .reason2-information {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   width: 400px;
+  padding: 47px 60px 0px 60px;
+}
+
+.reason2-information h3 {
+  margin: 0px;
+  padding: 0px;
+  width: 152px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.text-sedona-number {
+  padding-bottom: 5px;
 }
 
 .reason2-picture {
@@ -325,7 +440,7 @@ text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 80px;
+  padding-top: 28px;
   text-align: center;
 }
 
@@ -337,7 +452,7 @@ text-align: center;
 
 .map-area {
   width: 1200px;
-  height: 470px;
+  height: 594px;
   background-image: url("../img/index _backgroung-map.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -388,6 +503,7 @@ text-align: center;
   font-weight: normal;
   color:white;
 }
+
 
 .items-list {
   list-style: none;
@@ -492,15 +608,25 @@ text-align: center;
 
 .main-footer {
   display: flex;
-  margin-top: 20px;
   padding-bottom: 40px;
-  padding-top: 15px;
+  padding-top: 0px;
   justify-content: space-around;
   align-items: center;
 }
 
 .title-sedona {
-  margin-left: 23px;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.index-main-footer {
+  margin-top: -158px;
+  padding-top: 38px;
+  background-color: rgb(255, 255, 255, 0.9);
+}
+
+.index-main-inner {
+  padding-top: 28px;
 }
 
 .social {
@@ -514,6 +640,11 @@ text-align: center;
 .developer {
   margin-right: 5px;
   padding-top: 13px;
+}
+
+.html-button {
+margin-left: 3px;
+margin-top: 5px;
 }
 
 .html-button:hover path {

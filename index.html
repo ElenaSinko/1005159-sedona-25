@@ -102,31 +102,33 @@
           <div class = "form-area">
           <form class = "reservation-form" action = "https://echo.htmlacademy.ru" method = "post">
             <div class = "input-area">
-              <div class = "input-contaner">
-              <label class = "reservation-label">ДАТА ЗАЕЗДА:
-                <input type = "text" name = "arrival-date" placeholder = "24 АПРЕЛЯ 2017">
-              </label>
+              <div class = "input-container">
+                <label class = "reservation-label">ДАТА ЗАЕЗДА:
+                  <input type = "text" name = "arrival-date" placeholder = "24 АПРЕЛЯ 2017">
+                </label>
               </div>
               <div class = "input-container">
-              <label class = "reservation-label">ДАТА ВЫЕЗДА:
-                <input type = "text" name = "departure-date" placeholder = "4 ИЮЛЯ 2017">
-              </label>
+                <label class = "reservation-label">ДАТА ВЫЕЗДА:
+                  <input type = "text" name = "departure-date" placeholder = "4 ИЮЛЯ 2017">
+                </label>
               </div>
               <div class = "adults-number-container">
-              <label class = "reservation-label">ВЗРОСЛЫЕ:
-                <button class = "button-number butten-number-minus" type = "button">-</button>
-                <input type = "number" name = "adults" min = 1 placeholder = "2" >
-                <button class = "button-number" type = "button">+</button>
-              </label>
+                <label class = "reservation-label" for = "adults">ВЗРОСЛЫЕ:</label>
+                <div class = "number-container">
+                  <button class = "button-number" type = "button">-</button>
+                  <input type = "number" name = "adults" id = "adults" min = 1 placeholder = "2" >
+                  <button class = "button-number" type = "button">+</button>
+                </div>
               </div>
               <div class = "kids-number-container">
-              <label class = "reservation-label">ДЕТИ:
-                <button class = "button-number butten-number-minus" type = "button">-</button>
-                <input type = "number" name = "kids" min = 0 placeholder = "0" >
-                <button class = "button-number" type = "button">+</button>
-              </label>
+                <label class = "reservation-label" for = "kids">ДЕТИ:</label>
+                <div class = "number-container">
+                  <button class = "button-number" type = "button">-</button>
+                  <input type = "number" name = "kids" id = "kids" min = 0 placeholder = "0" >
+                  <button class = "button-number" type = "button">+</button>
+                </div>
               </div>
-              <button class = "button-main button-main-blue text" type = "submit">НАЙТИ</button>
+              <button class = "button-main-blue" type = "submit">НАЙТИ</button>
             </div>
           </form>
           </div>

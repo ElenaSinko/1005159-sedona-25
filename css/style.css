@@ -76,7 +76,9 @@ img {
   color:black;
 }
 
-
+.button {
+  color: white;
+}
 
 .conditions-label {
   font-size: 14px;
@@ -723,6 +725,7 @@ text-align: center;
 
   line-height: 20px;
   font-weight: normal;
+  color: white;
 
   background: transparent;
   border: 2px solid #ffffff;
@@ -837,6 +840,7 @@ text-align: center;
   background-color: #81b3d2;
   padding: 5px 17px 5px 17px;
   margin-right: 2px;
+  color: white;
 }
 
 .button-blue:hover,
@@ -852,6 +856,7 @@ text-align: center;
 .button-brown {
   background-color: #766357;
   padding: 5px 17px 5px 17px;
+  color: white;
 }
 
 .button-brown:hover,

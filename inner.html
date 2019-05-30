@@ -33,17 +33,53 @@
               <fieldset class = "infostructure">
                 <legend>ИНФРАСТРУКТУРА:</legend>
                 <ul class = "conditions-list">
-                  <li><label class = "conditions-label"><input class = "filter-option" name = "swimmingpool" type = "checkbox" checked>БАССЕЙН</label></li>
-                  <li><label class = "conditions-label"><input class = "filter-option" name = "parking" type = "checkbox">ПАРКОВКА</label></li>
-                  <li><label class = "conditions-label"><input class = "filter-option" name = "WI-FI" type = "checkbox">WI-FI</label>></li>
+                  <li>
+                    <label class = "conditions-label">
+                      <input class = "filter-option" name = "swimmingpool" type = "checkbox" checked>
+                      <span class = "check-box"></span>
+                      БАССЕЙН
+                    </label>
+                  </li>
+                  <li>
+                    <label class = "conditions-label">
+                      <input class = "filter-option" name = "parking" type = "checkbox">
+                      <span class = "check-box"></span>
+                      ПАРКОВКА
+                    </label>
+                  </li>
+                  <li>
+                    <label class = "conditions-label">
+                      <input class = "filter-option" name = "WI-FI" type = "checkbox">
+                      <span class = "check-box"></span>
+                      WI-FI
+                    </label>
+                  </li>
                 </ul>
               </fieldset>
               <fieldset class = "lodging">
                 <legend>ТИП ЖИЛЬЯ:</legend>
                 <ul class = "conditions-list">
-                  <li><label class = "conditions-label"><input class = "filter-option" name = "hotel" type = "checkbox" checked>ГОСТИНИЦА</label>></li>
-                  <li><label class = "conditions-label"><input class = "filter-option" name = "motel" type = "checkbox" checked>МОТЕЛЬ</label></li>
-                  <li><label class = "conditions-label"><input class = "filter-option" name = "apartment" type = "checkbox" checked>АПАРТАМЕНТЫ</label></li>
+                  <li>
+                    <label class = "conditions-label">
+                      <input class = "filter-option" name = "hotel" type = "checkbox" checked>
+                      <span class = "check-box"></span>
+                      ГОСТИНИЦА
+                    </label>
+                  </li>
+                  <li>
+                    <label class = "conditions-label">
+                      <input class = "filter-option" name = "motel" type = "checkbox" checked>
+                      <span class = "check-box"></span>
+                      МОТЕЛЬ
+                    </label>
+                  </li>
+                  <li>
+                    <label class = "conditions-label">
+                      <input class = "filter-option" name = "apartment" type = "checkbox" checked>
+                      <span class = "check-box"></span>
+                      АПАРТАМЕНТЫ
+                    </label>
+                  </li>
                 </ul>
               </fieldset>
               <fieldset class = "filter-range">
@@ -73,10 +109,14 @@
           <h3>Найдено: 3</h3>
           <p>сортировка:</p>
           <ul class = "sorting-list">
-            <li>по цене</li>
-            <li>по типу</li>
-            <li>по рейтингу</li>
+            <li><a href = "#" class = "sorting-item">по цене</a></li>
+            <li><a href = "#" class = "sorting-item">по типу</a></li>
+            <li><a href = "#" class = "sorting-item">по рейтингу</a></li>
           </ul>
+          <div class = "flash-container">
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg></span>
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 10L0 0h11"/></svg></span>
+          </div>
         </div>
         <ul class = "items-list">
           <li class = "hotel-item">

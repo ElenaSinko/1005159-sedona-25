@@ -53,11 +53,6 @@ img {
   font-weight: normal;
 }
 
-.text-sedona-white {
-  font-weight: normal;
-  color: white;
-}
-
 .title-reservation {
   font-size: 30px;
   line-height: 36px;
@@ -608,6 +603,41 @@ text-align: center;
   margin-left: 80px;
 }
 
+.filter-option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+input[ type = "checkbox"]:checked + .check-box{
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
+input[ type = "checkbox"]:disabled + .check-box{
+  background-image: url("../img/off-disabled.png");
+  background-repeat: no-repeat;
+
+}
+
+input[ type = "checkbox"]:checked:disabled + .check-box{
+  background-image: url("../img/on-disabled.png");
+  background-repeat: no-repeat;
+}
+
+
+.check-box {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  margin-left: -30px;
+
+}
+
+
 .filter-range {
   width: 328px;
   margin-left: 300px;
@@ -739,6 +769,24 @@ text-align: center;
   background-color: #ffffff;
 }
 
+.flash-container {
+  margin-left: 425px;
+  margin-top: 30px;
+}
+
+.flash-container span {
+  width:18px;
+  height:16px;
+  border: 0px solid black;
+}
+
+.flash-container span:hover path {
+  fill: #231f20;
+}
+
+.flash-container span:active path {
+  fill: #81b3d2;
+}
 
 
 /* HOTELS-LIST*/
@@ -769,22 +817,27 @@ text-align: center;
 .sorting-list {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 
-.sorting-list li {
+.sorting-item {
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
   color: #e3e3e3;
   margin-left: 46px;
   padding-top: 20px;
-
-  border-bottom: 1px dashed #c2d8e7;
+  border-bottom:1px dashed #81b3d2;
 }
 
-.sorting-list li:first-child {
-  color: #c2d8e7;
-  border-bottom: 0px dashed #c2d8e7;
+.sorting-item:hover,
+.sorting-item:focus {
+  color: #81b3d2;
+}
+
+.sorting-item:active {
+  color: black;
+  border: 0px solid black;
 }
 
 .items-list {

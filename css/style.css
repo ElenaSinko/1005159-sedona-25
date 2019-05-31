@@ -529,8 +529,7 @@ text-align: center;
 .calendar-arr:hover,
 .calendar-arr:focus,
 .calendar-arr:active {
-  border: 0;
-  border: none;
+  outline: none;
 }
 
 .calendar-dep {
@@ -543,6 +542,11 @@ text-align: center;
   height: 40px;
 }
 
+.calendar-dep:hover,
+.calendar-dep:focus,
+.calendar-dep:active {
+  outline: none;
+}
 
 .calendar-arr:active {
   border: none;

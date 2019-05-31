@@ -40,13 +40,13 @@ img {
 .title {
   font-size: 21px;
   line-height: 21px;
-  color:black;
+  color: #000000;;
 }
 
 .title-sedona {
   font-size: 21px;
   line-height: 26px;
-  color:black;
+  color:#000000;;
 }
 
 .text-sedona {
@@ -56,7 +56,7 @@ img {
 .title-reservation {
   font-size: 30px;
   line-height: 36px;
-  color: black;
+  color: #000000;;
 }
 
 .text-reservation {
@@ -68,17 +68,17 @@ img {
   font-size: 14px;
   line-height: 26px;
   font-weight:  normal;
-  color:black;
+  color:#000000;;
 }
 
 .button {
-  color: white;
+  color: #ffffff;
 }
 
 .conditions-label {
   font-size: 14px;
   font-weight: normal;
-  color:white;
+  color:#ffffff;
 }
 
 /* HEADER */
@@ -241,7 +241,7 @@ img {
 
 .reason1,
 .reason2 {
-  color: white;
+  color: #ffffff;
   background-color: #81b3d2;
 }
 
@@ -249,7 +249,7 @@ img {
 .reason1 p,
 .reason2 h3,
 .reason2 p {
-  color:white;
+  color:#ffffff;
 }
 
 .reason1-picture {
@@ -387,7 +387,7 @@ img {
 }
 
 .title.title-hotel {
-  color: white;
+  color: #ffffff;
   background-color:#766357;
   padding-top: 35px;
 }
@@ -440,14 +440,15 @@ text-align: center;
   margin: 0;
   width: 570px;
   height: 395px;
-  background-color: white;
+  background-color: #ffffff;
   margin: 0 auto;
 }
 .reservation-form {
-  background-color:white;
+  background-color:#ffffff;
 }
 
 .input-area {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   padding: 53px 55px 55px 56px;
@@ -456,15 +457,15 @@ text-align: center;
 .input-area label{
   font-size: 14px;
   line-height: 26px;
-  color: black;
+  color: #000000;;
 }
 
 .input-area input {
   background-color: #f2f2f2;
   font-size: 14px;
   line-height: 26px;
-  color: black;
-  border: 0px solid black;
+  color: #000000;;
+  border: none;
   margin-bottom: 28px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -477,14 +478,76 @@ text-align: center;
 }
 .input-area input:focus {
   outline: none;
-  background-color: white;
+  background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
 
 .date-input {
-  width: 326px;
+  width: 290px;
   height: 30px;
 }
+
+.date-input::-webkit-input-placeholder,
+.number-input::-webkit-input-placeholder{
+  color: #000000;;
+  font-weight: bold;
+}
+
+.date-input::-moz-placeholder,
+.number-input::-moz-placeholder{
+  color: #000000;;
+  font-weight: bold;
+}
+
+.date-input:-moz-placeholder,
+.number-input:-moz-placeholder{
+  color: #000000;;
+  font-weight: bold;
+}
+
+.date-input::-ms-input-placeholder,
+.number-input::-ms-input-placeholder{
+  color: #000000;;
+  font-weight: bold;
+}
+
+.input-container-arrival {
+  display: inline-block;
+}
+
+.calendar-arr{
+  position: absolute;
+  top: 53px;
+  left:473px;
+  border: none;
+  background-color: #f2f2f2;
+  width:40px;
+  height: 40px;
+}
+
+
+.calendar-arr:hover,
+.calendar-arr:focus,
+.calendar-arr:active {
+  border: 0;
+  border: none;
+}
+
+.calendar-dep {
+  position: absolute;
+  top: 121px;
+  left:473px;
+  border: none;
+  background-color: #f2f2f2;
+  width:40px;
+  height: 40px;
+}
+
+
+.calendar-arr:active {
+  border: none;
+}
+
 
 .input-container-arrival .date-input {
   margin-left: 20px;
@@ -524,7 +587,7 @@ text-align: center;
 .number-container .button-number {
   width: 40px;
   height: 40px;
-  border: 0px solid black;
+  border: none;
   background-color: #f2f2f2;
   color: #a9a9a9;
   font-size: 26px;
@@ -549,8 +612,9 @@ text-align: center;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  color: white;
+  color: #ffffff;
   padding: 15px;
+  border: none;
 }
 
 .button-main-blue:hover,
@@ -579,7 +643,7 @@ text-align: center;
 
 .filters legend {
   font-size: 16px;
-  color:white;
+  color:#ffffff;
 }
 
 .filter {
@@ -660,9 +724,9 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
 
   font-size: 0;
 
-  border: 2px solid white;
+  border: 2px solid #ffffff;
   border-radius: 2px;
-  color: white;
+  color: #ffffff;
 }
 
 .price-controls::after {
@@ -759,7 +823,7 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
 
   line-height: 20px;
   font-weight: normal;
-  color: white;
+  color: #ffffff;
 
   background: transparent;
   border: 2px solid #ffffff;
@@ -769,19 +833,20 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
 }
 
 .button-filter:hover {
-  color:black;
+  color:#000000;;
   background-color: #ffffff;
 }
 
 .flash-container {
-  margin-left: 425px;
+  margin-left: 430px;
   margin-top: 30px;
 }
 
 .flash-container span {
+  display: inline-block;
   width:18px;
   height:16px;
-  border: 0px solid black;
+  border: none;
 }
 
 .flash-container span:hover path {
@@ -792,6 +857,11 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
   fill: #81b3d2;
 }
 
+.flash-container .current path,
+.flash-container .current:hover path,
+.flash-container .current:active path{
+  fill: #81b3d2;
+}
 
 /* HOTELS-LIST*/
 
@@ -804,7 +874,7 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
 .hotel-sorting-area h3 {
   font-size: 21px;
   line-height: 26px;
-  color: black;
+  color: #000000;;
   padding-left: 71px;
   padding-top: 5px;
 }
@@ -813,7 +883,7 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
-  color: black;
+  color: #000000;;
   padding-left: 46px;
   padding-top: 20px;
 }
@@ -834,14 +904,22 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
   border-bottom:1px dashed #81b3d2;
 }
 
+.sorting-item.current,
+.sorting-item.current:hover,
+.sorting-item.current:focus,
+.sorting-item.current:active {
+  color: #81b3d2;
+  border: none;
+}
+
 .sorting-item:hover,
 .sorting-item:focus {
   color: #81b3d2;
 }
 
 .sorting-item:active {
-  color: black;
-  border: 0px solid black;
+  color: #000000;
+  border: none;
 }
 
 .items-list {
@@ -897,7 +975,7 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
   background-color: #81b3d2;
   padding: 5px 17px 5px 17px;
   margin-right: 2px;
-  color: white;
+  color: #ffffff;
 }
 
 .button-blue:hover,
@@ -913,7 +991,7 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
 .button-brown {
   background-color: #766357;
   padding: 5px 17px 5px 17px;
-  color: white;
+  color: #ffffff;
 }
 
 .button-brown:hover,
@@ -985,7 +1063,7 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
   padding-top: 23px;
   padding-bottom: 30px;
   padding-left: 25px;
-  background-color: rgb(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main-footer > a {

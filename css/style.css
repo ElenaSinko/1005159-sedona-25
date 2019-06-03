@@ -628,6 +628,8 @@ img {
 
   border: 2px solid transparent;
   background-color: #f2f2f2;
+
+  cursor: pointer;
 }
 
 .button-number:hover,
@@ -665,6 +667,8 @@ img {
 
   background-color:#81b3d2;
   border: none;
+
+  cursor: pointer;
 }
 
 .button-main-blue:hover,
@@ -754,6 +758,8 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
 
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
+
+  cursor: pointer;
 }
 
 .title-option {
@@ -1035,6 +1041,8 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
   margin: 0px;
   padding: 0px;
   margin-top: -4px;
+
+  cursor: pointer;
 }
 
 .hotel-price {

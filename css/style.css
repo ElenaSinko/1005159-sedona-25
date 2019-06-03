@@ -194,16 +194,21 @@ img {
   display: flex;
 }
 
-.text-sedona-number12 {
+.text-sedona-number1 {
   margin-bottom: 20px;
 }
 
+
+.text-sedona-number2 {
+  margin-bottom: 5px;
+}
+
 .container-title-reasons {
-  margin: 53px 300px 53px 275px;
+  margin: 53px 300px 53px 297px;
 }
 .container-title-reasons .text-sedona {
-  padding-top: 10px;
-  margin-left: 20px;
+  padding-top: 8px;
+  margin-left: 1px;
 
 }
 
@@ -300,7 +305,7 @@ img {
   flex-direction: column;
   box-sizing: border-box;
   width: 400px;
-  padding: 47px 60px 0px 60px;
+  padding: 47px 30px 0px 30px;
 }
 
 .reason2-information h3 {
@@ -309,10 +314,6 @@ img {
   width: 152px;
   margin: 0 auto;
   padding-bottom: 10px;
-}
-
-.text-sedona-number {
-  padding-bottom: 5px;
 }
 
 .reason2-picture {
@@ -339,6 +340,7 @@ img {
 
 .accomodation-list-item h3 {
   margin-bottom: 24px;
+  margin-top: 24px;
 }
 
 .accomodation-list-item1 {
@@ -363,8 +365,8 @@ img {
 .accomodation-list-item1 h3::before {
   content:" ";
   position: absolute;
-  top: -80px;
-  right: 94px;
+  top: -78px;
+  right: 93px;
 
   background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
@@ -376,7 +378,7 @@ img {
 .accomodation-list-item2 h3::before {
   content:" ";
   position: absolute;
-  top: -80px;
+  top: -76px;
   right: 107px;
 
   background-image: url("../img/icon-3.svg");
@@ -389,7 +391,7 @@ img {
 .accomodation-list-item3 h3::before {
   content:" ";
   position: absolute;
-  top: -86px;
+  top: -82px;
   right: 97px;
 
   background-image: url("../img/icon-2.svg");
@@ -404,7 +406,7 @@ img {
 .title-reservation-container p {
  width: 444px;
  margin: 0 auto;
- margin-bottom: 50px;
+ margin-bottom: 49px;
 }
 
 .title.title-hotel {
@@ -435,7 +437,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 28px;
+  padding-top: 27px;
   text-align: center;
 }
 
@@ -455,11 +457,10 @@ img {
 
 .form-area {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   width: 570px;
   height: 395px;
   background-color: #ffffff;
-  margin: 0 auto;
 }
 .reservation-form {
   background-color:#ffffff;
@@ -469,7 +470,8 @@ img {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: 53px 55px 55px 56px;
+  margin: 0px 35px 55px 56px;
+  padding-top: 55px;
 }
 
 .input-area label{
@@ -485,13 +487,13 @@ img {
   color: #000000;;
   border: none;
   margin-bottom: 28px;
-  padding-top: 5px;
+  padding-top: 6px;
   padding-bottom: 5px;
-  padding-left: 15px;
+  padding-left: 13px;
 }
 
-.input-area input:hover
-{
+.input-area input:hover,
+.input-area input:focus{
   background-color:#ebebeb;
 }
 .input-area input:focus {
@@ -501,9 +503,25 @@ img {
 }
 
 .date-input {
-  width: 330px;
-  height: 30px;
+  width: 333px;
+  height: 27px;
 }
+
+.input-container-arrival .date-input {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+
+.input-container-depature .date-input {
+  margin-left: 17px;
+  margin-right: 10px;
+}
+
+.input-container-depature{
+  margin-top: 1px;
+}
+
 
 .date-input::-webkit-input-placeholder,
 .number-input::-webkit-input-placeholder{
@@ -529,27 +547,24 @@ img {
   font-weight: bold;
 }
 
-.input-container-arrival {
-  display: inline-block;
-}
-
 .calendar {
   position: absolute;
   fill: #cacaca;
   border: none;
-  left:473px;
+  left:420px;
   background-color: transparent;
   width:40px;
   height: 40px;
 }
 
 .calendar-arr{
-  top: 53px;
+  top: 57px;
 }
 .calendar-dep {
-  top: 121px;
+  top: 123px;
 }
-.calendar:hover {
+.calendar:hover,
+.calendar:focus {
   outline: none;
   fill: #000000;
 }
@@ -558,24 +573,17 @@ img {
   fill: #81b3d2;
 }
 
-.input-container-arrival .date-input {
-  margin-left: 20px;
-}
-
-.input-container-depature .date-input {
-  margin-left: 17px;
-}
-
 .number-input {
   width: 20px;
-  height: 30px;
-  text-align: center;
+  height: 28px;
+  text-align: left;
 }
 
 
 .big-number-container {
   display:flex;
   justify-content: space-between;
+  margin-top: 2px;
 }
 
 .adults-number-container,
@@ -585,27 +593,31 @@ img {
   margin-bottom: 20px;
 }
 
+.kids-number-container {
+  margin-left: 22px;
+}
+
 .adults-number-container .number-container {
   margin-left:40px;
 }
 
 .kids-number-container .number-container {
-  margin-left:30px;
+  margin-left:25px;
 }
 
 .number-container .button-number {
   width: 40px;
-  height: 40px;
-  border: none;
+  height: 39px;
+  border: 2px solid transparent;
   background-color: #f2f2f2;
   color: #a9a9a9;
   font-size: 26px;
   font-weight: bold;
   text-align: center;
-  outline: none;
 }
 
-.button-number:hover {
+.button-number:hover,
+.button-number:focus {
   color: #000000;
   outline: none;
 }
@@ -628,14 +640,15 @@ img {
 
 .button-main-blue {
   display: block;
-  width: 100%;
+  width: 96%;
   background-color:#81b3d2;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: #ffffff;
-  padding: 15px;
+  padding: 16px;
   border: none;
+  margin-top: 5px;
 }
 
 .button-main-blue:hover,
@@ -841,7 +854,8 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
   cursor: pointer;
 }
 
-.range-toggle:hover {
+.range-toggle:hover,
+.range-toggle:focus {
   background: #1c4f80;
 }
 
@@ -872,7 +886,8 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
 
 }
 
-.button-filter:hover {
+.button-filter:hover,
+.button-filter:focus{
   color:#000000;;
   background-color: #ffffff;
 }
@@ -889,7 +904,8 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
   border: none;
 }
 
-.flash-container span:hover path {
+.flash-container span:hover path,
+.flash-container span:focus path{
   fill: #231f20;
 }
 
@@ -899,7 +915,8 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
 
 .flash-container .current path,
 .flash-container .current:hover path,
-.flash-container .current:active path{
+.flash-container .current:active path,
+.flash-container .current:focus path{
   fill: #81b3d2;
 }
 
@@ -1136,7 +1153,8 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
   background-color: #81b3d2;
 }
 
-.social-button:hover {
+.social-button:hover,
+.social-button:focus {
   background-color: #669ec0;
 }
 
@@ -1168,7 +1186,8 @@ margin-left: 3px;
 margin-top: 5px;
 }
 
-.html-button:hover path {
+.html-button:hover path,
+.html-button:focus path {
    fill: #81b3d2;
 }
 

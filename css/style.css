@@ -25,10 +25,10 @@ img {
 .container-shadow {
   box-sizing: border-box;
   width: 1200px;
-  margin: 0px auto;
+  margin: 0 auto;
 
   background-color: #ffffff;
-  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 /* ШРИФТЫ */
 
@@ -190,12 +190,12 @@ img {
   display: flex;
 }
 
-.text-sedona-number1 {
+.text-sedona-firstnumber {
   margin-bottom: 20px;
 }
 
 
-.text-sedona-number2 {
+.text-sedona-secondnumber {
   margin-bottom: 5px;
 }
 
@@ -206,7 +206,7 @@ img {
   padding-top: 8px;
 }
 
-.container-reasons-345 {
+.container-reasons {
   display: flex;
   justify-content: space-around;
 
@@ -222,8 +222,8 @@ img {
 .reason4 h3,
 .reason5 p,
 .reason5 h3 {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .reason3 {
@@ -236,9 +236,9 @@ img {
   margin-bottom: 21px;
 }
 
-.reason3 .text-sedona-number345,
-.reason4 .text-sedona-number345,
-.reason5 .text-sedona-number345 {
+.reason3 .text-sedona-numbers,
+.reason4 .text-sedona-numbers,
+.reason5 .text-sedona-numbers {
   margin-bottom: 25px;
 }
 
@@ -286,13 +286,13 @@ img {
 .reason1-information {
   box-sizing: border-box;
   width: 400px;
-  padding: 47px 60px 0px 60px;
+  padding: 47px 60px 0 60px;
 }
 
 
 .reason1-information h3 {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   margin-left: 40px;
   margin-right: 40px;
   padding-bottom: 10px;
@@ -304,13 +304,13 @@ img {
 
   box-sizing: border-box;
   width: 400px;
-  padding: 47px 30px 0px 30px;
+  padding: 47px 30px 0 30px;
 }
 
 .reason2-information h3 {
   width: 152px;
   margin: 0 auto;
-  padding: 0px;
+  padding: 0;
   padding-bottom: 10px;
 }
 
@@ -328,8 +328,8 @@ img {
   display: flex;
   list-style:none;
 
-  padding: 0px;
-  margin: 138px 0px 68px 0px;
+  padding: 0;
+  margin: 138px 0 68px 0;
 }
 
 .accomodation-list li {
@@ -476,7 +476,7 @@ img {
   display: flex;
   flex-wrap: wrap;
 
-  margin: 0px 35px 55px 56px;
+  margin: 0 35px 55px 56px;
   padding-top: 55px;
 }
 
@@ -686,7 +686,7 @@ img {
 .filters {
   background-color: #4377a2;
   background-image: url("../img/inner_background.jpg");
-  background-position: 0% 16%;
+  background-position: 0 16%;
 }
 
 .filters fieldset {
@@ -761,8 +761,8 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
 }
 
 .title-option {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   margin-left: 9px;
   margin-bottom: 2px;
 }
@@ -813,6 +813,7 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
 
   font-size: 14px;
   line-height: 32px;
+  vertical-align: middle;
 
   cursor: pointer;
 }
@@ -915,26 +916,29 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
   margin-top: 30px;
 }
 
-.flash-container span {
+.flash-container-span {
   display: inline-block;
   width:19px;
   height:17px;
+
+  vertical-align: top;
+
   border: none;
 }
 
-.flash-container span:hover path,
-.flash-container span:focus path{
+.flash-container-span:hover path,
+.flash-container-span:focus path{
   fill: #231f20;
 }
 
-.flash-container span:active path {
+.flash-container-span:active path {
   fill: #81b3d2;
 }
 
-.flash-container .current path,
-.flash-container .current:hover path,
-.flash-container .current:active path,
-.flash-container .current:focus path{
+.flash-current path,
+.flash-current:hover path,
+.flash-current:active path,
+.flash-current:focus path{
   fill: #81b3d2;
 }
 
@@ -1006,8 +1010,8 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
   list-style: none;
   flex-direction: column;
 
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .hotel-item {
@@ -1030,14 +1034,14 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
 }
 
 .container-hotel-information {
-  padding-top: 0px;
+  padding-top: 0;
   margin-left: 30px;
   margin-right: 523px;
 }
 
 .container-hotel-information h3 {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   margin-top: -4px;
 
   cursor: pointer;
@@ -1142,7 +1146,7 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
 .main-footer {
   display: flex;
   padding-bottom: 40px;
-  padding-top: 0px;
+  padding-top: 0;
   align-items: center;
 }
 

@@ -96,7 +96,7 @@ img {
 .main-navigation {
   display: flex;
   flex-wrap: wrap;
-  /*height: 56px;*/
+  max-height: 56px;
 
 }
 

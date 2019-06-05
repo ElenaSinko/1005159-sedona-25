@@ -845,15 +845,15 @@ input[ type = "checkbox"]:focus + .check-box{
 
 .price-controls input {
   width: 50px;
-  height: 10px;
+
   margin: 0;
 
   color: inherit;
   font: inherit;
+  line-height: 21px;
 
   background: none;
   border: none;
-  background-color: tomato;
 }
 
 .range-controls {

@@ -60,11 +60,6 @@ img {
   color: #000000;;
 }
 
-.text-reservation {
-  line-height: 24px;
-  font-weight: normal;
-}
-
 .text {
   font-size: 14px;
   line-height: 26px;
@@ -179,11 +174,6 @@ img {
   list-style: none;
 }
 
-/* WELCOME */
-
-.welcome {
- margin-bottom: 55px;
-}
 
 /* ADVATAGES */
 
@@ -206,6 +196,8 @@ img {
   margin-bottom: 5px;
 }
 
+
+
 .container-title-reasons {
   margin: 53px 300px 53px 297px;
 }
@@ -213,12 +205,12 @@ img {
   padding-top: 8px;
 }
 
-.container-reasons {
+.container-reasons-345 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 
-  padding-top: 20px;
+  padding-top: 24px;
   padding-bottom: 62px;
 
   background-color: #eeeeee;
@@ -257,7 +249,9 @@ img {
 }
 
 .reason4 h3 {
-  margin-bottom: 21px;
+  width: 120px;
+  margin-bottom: 20px;
+  margin-left: 77px;
 }
 
 
@@ -267,7 +261,9 @@ img {
 }
 
 .reason5 h3 {
+  width: 120px;
   margin-bottom: 21px;
+  margin-left: 63px;
 }
 
 .reason1,
@@ -281,14 +277,6 @@ img {
 .reason2 h3,
 .reason2 p {
   color:#ffffff;
-}
-
-.reason1-picture {
-  width: 800px;
-  height: 256px;
-
-  background-image: url("../img/index_background-reason1.jpg");
-  background-size: contain;
 }
 
 .reason1-information {
@@ -313,7 +301,7 @@ img {
 
   box-sizing: border-box;
   width: 400px;
-  padding: 47px 30px 0 30px;
+  padding: 47px 45px 0 45px;
 }
 
 .reason2-information h3 {
@@ -321,14 +309,6 @@ img {
   margin: 0 auto;
   padding: 0;
   padding-bottom: 10px;
-}
-
-.reason2-picture {
-  width: 800px;
-  height: 256px;
-
-  background-image: url("../img/index_background-reason2.jpg");
-  background-size: contain;
 }
 
 /* ACCOMODATION*/
@@ -443,6 +423,10 @@ img {
 .reservation h3,
 .reservation p {
   text-align: center;
+}
+
+.reservation > p {
+  line-height: 24px;
 }
 
 .title-reservation-container {
@@ -701,7 +685,6 @@ img {
   background-color: #4377a2;
   background-image: url("../img/inner_background.jpg");
   background-position: 0 16%;
-  padding-bottom: 5px;
 }
 
 .filters fieldset {
@@ -720,13 +703,13 @@ img {
 }
 .conditions-list {
   list-style: none;
-  margin: 0;
+  margin: 0px;
   padding: 0;
   padding-left: 30px;
 }
 
 .conditions-list li {
-  padding-bottom: 22px;
+  padding-bottom: 24px;
 }
 
 .infostructure {
@@ -759,8 +742,12 @@ input[ type = "checkbox"]:disabled + .check-box{
 }
 
 input[ type = "checkbox"]:checked:disabled + .check-box{
-  background-image: url("../img/on-disabled.png");
+  background-image: url("../img/checkbox-on2.svg");
   background-repeat: no-repeat;
+}
+
+input[ type = "checkbox"]:focus + .check-box{
+  outline: 2px solid #81b3d2;
 }
 
 .check-box {
@@ -894,6 +881,9 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
 .range-toggle:hover,
 .range-toggle:focus {
   background: #1c4f80;
+  border: 9px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 }
 
 .range-toggle-min {
@@ -932,7 +922,7 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
   margin-top: 30px;
 }
 
-.flash-container-span {
+.flash-container-link {
   display: inline-block;
   width:19px;
   height:17px;
@@ -942,12 +932,12 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
   border: none;
 }
 
-.flash-container-span:hover path,
-.flash-container-span:focus path{
+.flash-container-link:hover path,
+.flash-container-link:focus path{
   fill: #231f20;
 }
 
-.flash-container-span:active path {
+.flash-container-link:active path {
   fill: #81b3d2;
 }
 
@@ -1187,11 +1177,11 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
   margin-left: 110px;
 }
 
-.index-main-inner {
+.inner-main-footer {
   padding-top: 20px;
 }
 
-.index-main-inner > a {
+.inner-main-footer > a {
   margin-left: 130px;
 }
 
@@ -1203,8 +1193,8 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
   margin-left: 214px;
 }
 
-.index-main-inner .social {
-  margin-left: 220px;
+.inner-main-footer .social {
+  margin-left: 218px;
 }
 
 .social a {
@@ -1237,7 +1227,7 @@ input[ type = "checkbox"]:checked:disabled + .check-box{
   margin-left: 225px;
 }
 
-.index-main-inner .footer-copyright {
+.inner-main-footer .footer-copyright {
   margin-left: 220px;
 }
 

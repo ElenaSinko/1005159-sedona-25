@@ -5,7 +5,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 700;
+  font-weight: bold;
   color: #333333;
   text-transform: uppercase;
 
@@ -30,6 +30,7 @@ img {
   background-color: #ffffff;
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
+
 /* ШРИФТЫ */
 
 .main-header a,
@@ -79,13 +80,20 @@ img {
 
 /* HEADER */
 
+
 .container-top {
   height:570px;
 
-  background-image: url("../img/index_background-welcome.jpg");
-  background-position: 50% 0;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("../img/intro-mask.svg"), url("../img/background-photo.jpg");
+  background-position: 100% 507px, 50% 0%;
+  background-size: 1201px 60px, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.container-top>img {
+  position:relative;
+  top: 76px;
+  left: 370px;
 }
 
 .main-navigation {
@@ -199,7 +207,7 @@ img {
 
 
 .container-title-reasons {
-  margin: 53px 300px 53px 297px;
+  margin: 55px 300px 53px 297px;
 }
 .container-title-reasons .text-sedona {
   padding-top: 8px;
@@ -211,7 +219,7 @@ img {
   justify-content: space-around;
 
   padding-top: 24px;
-  padding-bottom: 62px;
+  padding-bottom: 58px;
 
   background-color: #eeeeee;
 }
@@ -454,16 +462,14 @@ img {
   background-repeat: no-repeat;
 }
 
-.form-area {
+.reservation-form {
   width: 570px;
   height: 395px;
   padding: 0;
   margin: 0 auto;
 
-  background-color: #ffffff;
-}
-.reservation-form {
   background-color:#ffffff;
+  box-shadow: 0 7px 15px 0 rgba(50,50,50, 0.15);
 }
 
 .input-area {
@@ -489,6 +495,8 @@ img {
 
   font-size: 14px;
   line-height: 26px;
+  font-weight: inherit;
+  text-transform:inherit;
   color: #000000;
 
   background-color: #f2f2f2;
@@ -529,25 +537,25 @@ img {
 .date-input::-webkit-input-placeholder,
 .number-input::-webkit-input-placeholder{
   color: #000000;;
-  font-weight: bold;
+  font-weight: inherit;
 }
 
 .date-input::-moz-placeholder,
 .number-input::-moz-placeholder{
   color: #000000;;
-  font-weight: bold;
+  font-weight: inherit;
 }
 
 .date-input:-moz-placeholder,
 .number-input:-moz-placeholder{
   color: #000000;;
-  font-weight: bold;
+  font-weight: inherit;
 }
 
 .date-input::-ms-input-placeholder,
 .number-input::-ms-input-placeholder{
   color: #000000;;
-  font-weight: bold;
+  font-weight: inherit;
 }
 
 .calendar {
@@ -618,7 +626,7 @@ img {
 
   color: #a9a9a9;
   font-size: 26px;
-  font-weight: bold;
+  font-weight: inherit;
   text-align: center;
 
   border: 2px solid transparent;
@@ -658,7 +666,7 @@ img {
 
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: inherit;
   color: #ffffff;
 
   background-color:#81b3d2;
@@ -736,13 +744,13 @@ input[ type = "checkbox"]:checked + .check-box{
 }
 
 input[ type = "checkbox"]:disabled + .check-box{
-  background-image: url("../img/off-disabled.png");
+  background-image: url("../img/checkbox-off-disabled.svg");
   background-repeat: no-repeat;
 
 }
 
 input[ type = "checkbox"]:checked:disabled + .check-box{
-  background-image: url("../img/checkbox-on2.svg");
+  background-image: url("../img/checkbox-on-disabled.svg");
   background-repeat: no-repeat;
 }
 
@@ -897,12 +905,13 @@ input[ type = "checkbox"]:focus + .check-box{
 .button-filter {
   display: block;
   margin: 0 auto;
-  padding: 7px 34px 5px 34px;
+  padding: 7px 35px 5px 35px;
   margin-left:85px;
 
 
   line-height: 20px;
   font-weight: normal;
+  text-transform: inherit;
   color: #ffffff;
 
   background: transparent;
@@ -936,6 +945,12 @@ input[ type = "checkbox"]:focus + .check-box{
 .flash-container-link:focus path{
   fill: #231f20;
 }
+
+.flash-container-link:focus {
+  outline: 2px solid transparent;
+  border: 2px solid #81b3d2;
+}
+
 
 .flash-container-link:active path {
   fill: #81b3d2;
@@ -1044,6 +1059,7 @@ input[ type = "checkbox"]:focus + .check-box{
 }
 
 .container-hotel-information {
+  max-width: 262px;
   padding-top: 0;
   margin-left: 30px;
   margin-right: 523px;
@@ -1135,22 +1151,26 @@ input[ type = "checkbox"]:focus + .check-box{
 }
 
 .stars-rating {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -1px;
-
-  align-self: flex-end;
-}
-
-.stars-rating span {
-
   display: block;
-  width: 24px;
-  height: 24px;
+  height: 20px;
+  align-self: flex-end;
   margin-bottom: 25px;
+  margin-right: 2px;
 
   background-image: url("../img/star.svg");
-  background-repeat: no-repeat;
+  background-repeat: space;
+}
+
+.stars-rating-amara {
+  width: 89px;
+}
+
+.stars-rating-desert {
+  width: 67px;
+}
+
+.stars-rating-villa {
+  width: 43px;
 }
 
 /* FOOTER */

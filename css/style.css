@@ -405,12 +405,18 @@ img {
 .title-reservation-container p {
  width: 444px;
  margin: 0 auto;
- margin-bottom: 49px;
+ margin-bottom: 48px;
 }
 
 .title.title-hotel {
-  padding-top: 35px;
+  width: 570px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: inherit;
+  text-transform: inherit;
   color: #ffffff;
+
   background-color:#766357;
 }
 
@@ -443,7 +449,7 @@ img {
   flex-direction: column;
   justify-content: center;
 
-  padding-top: 27px;
+  padding-top: 26px;
   text-align: center;
 }
 
@@ -667,6 +673,7 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: inherit;
+  text-transform: inherit;
   color: #ffffff;
 
   background-color:#81b3d2;
@@ -935,8 +942,8 @@ input[ type = "checkbox"]:focus + .check-box{
 
 .flash-container-link {
   display: inline-block;
-  width:19px;
-  height:17px;
+  width: 13px;
+  margin-left: 5px;
 
   vertical-align: top;
 
@@ -948,9 +955,8 @@ input[ type = "checkbox"]:focus + .check-box{
   fill: #231f20;
 }
 
-.flash-container-link:focus {
+.flash-current:focus {
   outline: 2px solid transparent;
-  border: 2px solid #81b3d2;
 }
 
 
@@ -1187,7 +1193,7 @@ input[ type = "checkbox"]:focus + .check-box{
 
 
 .index-main-footer {
-  margin-top: -120px;
+  margin-top: -122px;
   padding-top: 23px;
   padding-bottom: 30px;
   padding-left: 25px;

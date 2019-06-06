@@ -80,7 +80,6 @@ img {
 
 /* HEADER */
 
-
 .container-top {
   height:570px;
 
@@ -100,7 +99,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   max-height: 56px;
-
 }
 
 .site-navigation-left,
@@ -140,7 +138,6 @@ img {
 .site-navigation-left li:nth-child(2) {
   margin-right: -2px;
 }
-
 
 .site-navigation-right li {
   text-align: right;
@@ -182,7 +179,6 @@ img {
   list-style: none;
 }
 
-
 /* ADVATAGES */
 
 .reason1 {
@@ -199,16 +195,14 @@ img {
   margin-bottom: 20px;
 }
 
-
 .text-sedona-secondnumber {
   margin-bottom: 5px;
 }
 
-
-
 .container-title-reasons {
   margin: 55px 300px 53px 297px;
 }
+
 .container-title-reasons .text-sedona {
   padding-top: 8px;
 }
@@ -262,7 +256,6 @@ img {
   margin-left: 77px;
 }
 
-
 .reason5 {
   width: 252px;
   margin-top: 24px;
@@ -292,7 +285,6 @@ img {
   width: 400px;
   padding: 47px 60px 0 60px;
 }
-
 
 .reason1-information h3 {
   margin: 0;
@@ -345,7 +337,6 @@ img {
   width: 260px;
   margin-left: 70px;
 }
-
 
 .accomodation-list-item2 {
   position: relative;
@@ -418,6 +409,7 @@ img {
   color: #ffffff;
 
   background-color:#766357;
+  border: none;
 }
 
 .title.title-hotel:hover,
@@ -478,6 +470,10 @@ img {
   box-shadow: 0 7px 15px 0 rgba(50,50,50, 0.15);
 }
 
+.hide {
+  display: none;
+}
+
 .input-area {
   position: relative;
   display: flex;
@@ -513,6 +509,7 @@ img {
 .input-area input:focus{
   background-color:#ebebeb;
 }
+
 .input-area input:focus {
   outline: 2px solid transparent;
   background-color: #ffffff;
@@ -529,7 +526,6 @@ img {
   margin-right: 10px;
 }
 
-
 .input-container-depature .date-input {
   margin-left: 17px;
   margin-right: 10px;
@@ -538,7 +534,6 @@ img {
 .input-container-depature{
   margin-top: 1px;
 }
-
 
 .date-input::-webkit-input-placeholder,
 .number-input::-webkit-input-placeholder{
@@ -596,6 +591,7 @@ img {
 .number-input {
   width: 16px;
   height: 24px;
+
   text-align: left;
 }
 
@@ -1002,9 +998,11 @@ input[ type = "checkbox"]:focus + .check-box{
 .sorting-list {
   display: flex;
   flex-wrap: wrap;
+  width: 280px;
+  margin-top: 20px;
+
   list-style: none;
   align-items: center;
-  margin-top: 20px;
 }
 
 .sorting-item {
@@ -1202,15 +1200,16 @@ input[ type = "checkbox"]:focus + .check-box{
 }
 
 .main-footer > a {
-  margin-left: 110px;
+  width: 140px;
+  margin-left: 108px;
 }
 
 .inner-main-footer {
-  padding-top: 20px;
+  padding-top: 21px;
 }
 
 .inner-main-footer > a {
-  margin-left: 130px;
+  margin-left: 132px;
 }
 
 .social {
@@ -1218,11 +1217,11 @@ input[ type = "checkbox"]:focus + .check-box{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 214px;
+  margin-left: 212px;
 }
 
 .inner-main-footer .social {
-  margin-left: 218px;
+  margin-left: 211px;
 }
 
 .social a {
@@ -1252,11 +1251,11 @@ input[ type = "checkbox"]:focus + .check-box{
 .footer-copyright {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 225px;
+  margin-left: 224px;
 }
 
 .inner-main-footer .footer-copyright {
-  margin-left: 220px;
+  margin-left: 226px;
 }
 
 .developer {

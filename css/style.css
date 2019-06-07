@@ -461,7 +461,8 @@ img {
 }
 
 .map-area iframe {
-  position: relative;
+  position: absolute;
+  z-index: 1;
 }
 
 .reservation-form {
@@ -470,6 +471,9 @@ img {
   height: 395px;
   padding: 0;
   margin: 0 auto;
+
+  position:relative;
+  z-index:2;
 
   background-color:#ffffff;
   box-shadow: 0 7px 15px 0 rgba(50,50,50, 0.15);
@@ -1254,6 +1258,9 @@ input[ type = "checkbox"]:focus + .check-box{
   padding-top: 23px;
   padding-bottom: 30px;
   padding-left: 25px;
+
+  position: relative;
+  z-index: 2;
 
   background-color: rgba(255, 255, 255, 0.9);
 }

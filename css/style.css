@@ -460,7 +460,12 @@ img {
   background-repeat: no-repeat;
 }
 
+.map-area iframe {
+  position: relative;
+}
+
 .reservation-form {
+  display: none;
   width: 570px;
   height: 395px;
   padding: 0;
@@ -468,17 +473,64 @@ img {
 
   background-color:#ffffff;
   box-shadow: 0 7px 15px 0 rgba(50,50,50, 0.15);
-  animation-name: appearence;
+  animation-name: move-out;
+  animation-duration: 1s;
+  -webkit-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+
+@-webkit-keyframes move-out {
+  0% {-webkit-transform: scaleY(0.1);transform: scaleY(0);}
+  100% {-webkit-transform: scaleY(1);transform: scaleY(1);}
+}
+
+@keyframes move-out {
+  0% {-webkit-transform: scaleY(0.1);transform: scaleY(0);}
+  100% {-webkit-transform: scaleY(1);transform: scaleY(1);}
+}
+
+.show {
+  display: block;
+}
+
+@keyframes warning {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes warning-input {
+  0%,
+  100% {
+    border: 2px solid #ff6347;
+  }
+}
+
+.input-error-folder {
+  animation-name: warning-input;
   animation-duration: 1s;
 }
 
-@keyframes appearence {
-  0% {transform: translateY(-397px);}
-  100% {transform: translateY(0px);}
-}
-
-.hide {
-  display: none;
+.input-error {
+  animation-name: warning;
+  animation-duration: 1s;
 }
 
 .input-area {

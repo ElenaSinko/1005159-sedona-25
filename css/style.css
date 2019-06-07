@@ -95,6 +95,14 @@ img {
   left: 370px;
 }
 
+.white-strip {
+  position: absolute;
+  top: 565px;
+  width: 1200px;
+  height: 5px;
+  background-color: #ffffff;
+}
+
 .main-navigation {
   display: flex;
   flex-wrap: wrap;

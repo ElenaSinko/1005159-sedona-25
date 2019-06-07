@@ -468,6 +468,13 @@ img {
 
   background-color:#ffffff;
   box-shadow: 0 7px 15px 0 rgba(50,50,50, 0.15);
+  animation-name: appearence;
+  animation-duration: 1s;
+}
+
+@keyframes appearence {
+  0% {transform: translateY(-397px);}
+  100% {transform: translateY(0px);}
 }
 
 .hide {
@@ -1251,6 +1258,7 @@ input[ type = "checkbox"]:focus + .check-box{
 .footer-copyright {
   display: flex;
   flex-wrap: wrap;
+  width: 202px;
   margin-left: 224px;
 }
 

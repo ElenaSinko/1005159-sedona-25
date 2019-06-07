@@ -58,6 +58,14 @@ form.addEventListener("submit", function(){
   }
 })
 
+if (storageAdults){
+  adultsNumber.value = storageAdults;
+}
+
+if (storageKids){
+  kidsNumber.value = storageKids;
+}
+
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();

@@ -660,10 +660,11 @@ img {
 }
 
 .number-input {
-  width: 16px;
+  width: 22px;
   height: 24px;
+  padding-right: 10px;
 
-  text-align: left;
+  text-align: center;
 }
 
 .big-number-container {
@@ -694,8 +695,9 @@ img {
 }
 
 .number-container .button-number {
-  width: 40px;
+  width: 32px;
   height: 39px;
+  padding: 5px;
 
   color: #a9a9a9;
   font-size: 26px;
@@ -706,6 +708,14 @@ img {
   background-color: #f2f2f2;
 
   cursor: pointer;
+}
+
+.number-container .button-number-minus {
+  padding-left: 10px;
+}
+
+.number-container .button-number-plus {
+  padding-right: 10px;
 }
 
 .button-number:hover,

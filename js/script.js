@@ -29,31 +29,16 @@ hotelSearch.addEventListener("click", function(evt){
 });
 
 form.addEventListener("submit", function(evt){
-  if(!arrival.value && departure.value){
+  if(!arrival.value || !departure.value){
     evt.preventDefault();
-    arrival.classList.add("input-error-folder");
     form.classList.add("input-error");
   }
-
-  else if(arrival.value && !departure.value){
-    evt.preventDefault();
-    departure.classList.add("input-error-folder");
-    form.classList.add("input-error");
-  }
-
   else{
-    evt.preventDefault();
-    departure.classList.add("input-error-folder");
-    arrival.classList.add("input-error-folder");
-    form.classList.add("input-error");}
-
-})
-
-form.addEventListener("submit", function(){
-  if(arrival.value && departure.value && adultsNumber.value && kidsNumber.value){
-    if (isStorageSupportAdults && isStorageSupportKids) {
-      localStorage.setItem("adultsNumber", adultsNumber.value);
-      localStorage.setItem("kidsNumber", kidsNumber.value);
+    if(arrival.value && departure.value && adultsNumber.value && kidsNumber.value){
+      if (isStorageSupportAdults && isStorageSupportKids) {
+        localStorage.setItem("adultsNumber", adultsNumber.value);
+        localStorage.setItem("kidsNumber", kidsNumber.value);
+      }
     }
   }
 })

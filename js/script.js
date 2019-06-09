@@ -1,4 +1,5 @@
 var hotelSearch = document.querySelector(".button-search");
+var popup = document.querySelector(".map-area");
 var form = document.querySelector(".reservation-form");
 var arrival = form.querySelector("[name=arrival-date]");
 var departure = form.querySelector("[name=departure-date]");
@@ -26,11 +27,14 @@ try {
 hotelSearch.addEventListener("click", function(evt){
   evt.preventDefault();
   form.classList.toggle("show");
+  form.classList.remove("input-error");
 });
 
 form.addEventListener("submit", function(evt){
   if(!arrival.value || !departure.value){
     evt.preventDefault();
+    form.classList.remove("input-error");
+    popup.offsetWidth = popup.offsetWidth;
     form.classList.add("input-error");
   }
   else{
@@ -59,3 +63,4 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+

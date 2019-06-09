@@ -91,8 +91,8 @@ img {
 
 .container-top>img {
   position:relative;
-  top: 76px;
-  left: 370px;
+  top: 73px;
+  left: 368px;
 }
 
 .white-strip {
@@ -239,41 +239,43 @@ img {
 .reason3 {
   width: 220px;
   margin-top: 24px;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .reason3 h3 {
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 .reason3 .text-sedona-numbers,
 .reason4 .text-sedona-numbers,
 .reason5 .text-sedona-numbers {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .reason4 {
-  width: 275px;
+  width: 274px;
   margin-top: 24px;
-  margin-left: 15px;
+  margin-left: 11px;
 }
 
 .reason4 h3 {
   width: 120px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   margin-left: 77px;
 }
 
 .reason5 {
-  width: 252px;
+  width: 254px;
   margin-top: 24px;
+  margin-left: -2px;
 }
 
 .reason5 h3 {
   width: 120px;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
   margin-left: 63px;
 }
+
 
 .reason1,
 .reason2 {
@@ -404,7 +406,9 @@ img {
 .title-reservation-container p {
  width: 444px;
  margin: 0 auto;
- margin-bottom: 48px;
+ margin-bottom: 45px;
+
+ line-height: 24px;
 }
 
 .title.title-hotel {

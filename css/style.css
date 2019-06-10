@@ -12,7 +12,6 @@ body {
   background-color: #f2f2f2;
 }
 
-
 a {
   text-decoration: none;
 }
@@ -550,7 +549,7 @@ img {
 .input-area label{
   font-size: 14px;
   line-height: 26px;
-  color: #000000;;
+  color: #000000;
 }
 
 .input-area input {
@@ -691,6 +690,7 @@ img {
   width: 32px;
   height: 39px;
   padding: 5px;
+  padding-top: 3px;
 
   color: #a9a9a9;
   font-size: 26px;
@@ -702,6 +702,11 @@ img {
 
   cursor: pointer;
 }
+
+.number-container .button-number {
+  position: relative;
+}
+
 
 .number-container .button-number-minus {
   padding-left: 10px;
@@ -786,6 +791,7 @@ img {
   flex-wrap: wrap;
   padding-top: 28px;
 }
+
 .conditions-list {
   list-style: none;
   margin: 0px;
@@ -823,7 +829,6 @@ input[ type = "checkbox"]:checked + .check-box{
 input[ type = "checkbox"]:disabled + .check-box{
   background-image: url("../img/checkbox-off-disabled.svg");
   background-repeat: no-repeat;
-
 }
 
 input[ type = "checkbox"]:checked:disabled + .check-box{
@@ -854,6 +859,7 @@ input[ type = "checkbox"]:focus + .check-box{
   margin-left: 9px;
   margin-bottom: 2px;
 }
+
 .title-option-legend {
   margin-left: 11px;
 }
@@ -987,7 +993,6 @@ input[ type = "checkbox"]:focus + .check-box{
   padding: 7px 35px 5px 35px;
   margin-left:85px;
 
-
   line-height: 20px;
   font-weight: normal;
   text-transform: inherit;
@@ -1001,7 +1006,7 @@ input[ type = "checkbox"]:focus + .check-box{
 
 .button-filter:hover,
 .button-filter:focus{
-  color:#000000;;
+  color:#000000;
   background-color: #ffffff;
 }
 

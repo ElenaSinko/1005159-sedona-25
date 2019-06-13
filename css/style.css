@@ -82,11 +82,12 @@ img {
 .container-top {
   height:570px;
 
-  background-image: url("../img/intro-mask.svg"), url("../img/background-photo.jpg");
+  /*background-image: url("../img/intro-mask.svg"), url("../img/background-photo.jpg");*/
   background-position: 100% 507px, 50% 0%;
   background-size: 1201px 60px, cover;
   background-repeat: no-repeat, no-repeat;
 }
+
 
 .container-top>img {
   position:relative;
